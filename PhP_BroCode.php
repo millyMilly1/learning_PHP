@@ -67,4 +67,35 @@
         $counter++;
         echo $counter . "<br>";
     }
+
+
+    //arrays in PHP
+
+    $apple = "apple";
+    $orange = "orange";
+    $mango = "mango";
+    $food4 = "rice";
+
+
+    $foods  = array("rice", "beans", "fish", "meat", "juice");
+
+    echo $foods[0];
+    echo $foods[1];
+    echo $foods[2];
+    echo $foods[3];
+
+
+    //easier method to list all the values in your array;
+
+    $foods[0] = "pineapple";
+    array_push($foods . "pineapple");
+    array_pop($foods);
+    array_shift($foods);
+    $foods = array_reverse($foods);
+    echo count($foods);
+
+    foreach($foods as $food){
+        echo $food . "<br>"
+    }
+
 ?>
