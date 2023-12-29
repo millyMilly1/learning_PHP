@@ -95,7 +95,33 @@
     echo count($foods);
 
     foreach($foods as $food){
-        echo $food . "<br>"
+        echo $food . "<br>";
+    }
+
+    //ASSOCIATIVE ARRAY
+
+
+    $capitals = array("USA" => "WASHINGTON DC",
+                    "NIGERIA" => "ABUJA",
+                    "TOGO" => "LOME",
+                    "JAPAN" => "TOKOYO"
+);
+
+
+    $capitals["USA"] = "LAS VEGAS";
+    array_pop($capitals);
+    array_shift($capitals);
+    $newcap = array_flip($capitals);
+    $keys = array_keys($capitals);
+    $value = array_values($capitals);
+
+
+    foreach($keys as $key){
+        echo "{$key} . <br>";
+    }
+
+    foreach($values as $value){
+        echo "{$value} . <br>";
     }
 
 ?>
